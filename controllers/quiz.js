@@ -158,7 +158,7 @@ exports.check = (req, res, next) => {
 
 exports.random_play = (req, res, next) => {
 
-    let score;
+    let score = 0;
     let quizzesId;
 
 
@@ -166,7 +166,6 @@ exports.random_play = (req, res, next) => {
 
     if (req.session.randomPlay === undefined || (req.session.randomPlay.length === 0)) {
 
-        score = 0;
 
         quizzesId = [];
 
